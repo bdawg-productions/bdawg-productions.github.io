@@ -1,7 +1,12 @@
 /* BASE STYLES */
 
+body {
+  background-color: black;
+}
+
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Mono", monospace;
+  color: white;
 }
 
 body, h1 {
@@ -9,11 +14,11 @@ body, h1 {
   padding: 0;
 }
 
-.container, header {
+.container, header, ul, article {
     display: flex;
 }
 
-.container {
+.container, ul {
   flex-direction: column;
 }
 
@@ -21,6 +26,8 @@ body, h1 {
 
 header {
   padding: 7px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 nav {
@@ -31,13 +38,17 @@ nav {
 }
 
 .nav-show {
-  height: 110px;
+  height: 120px;
 }
 
 #menu-button {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 99;
   background-color: rgba(0,0,0,0);
   border: none;
-  font-size: 1.3em;
+  font-size: 2em;
   transition: 0.2s;
 }
 
@@ -47,6 +58,11 @@ nav {
 
 .rotate-cw {
   transform: rotate(90deg);
+}
+
+.logo {
+  height: 50px;
+  align-self: center;
 }
 
 ul {
@@ -60,27 +76,56 @@ li {
 }
 
 h1 {
+  width: 100%;
+  text-align: center;
   font-size: 1.7em;
+  margin-left: 30px;
+  transform: scaleX(1.5);
 }
 
-/* RUNNER */
+/* SPLASH */
 
-.runner {
-  background: url("../media/cityscape.jpg") left no-repeat;
+#splash-image {
+  align-self: left;
+  width: 100%;
 }
 
-.overlay-card {
-  background-color: white;
-  padding: 20px;
-  margin: 30px;
-  max-width: 400px;
+article {
+  flex-direction: column;
 }
 
-.runner h2 {
-  margin: 0;
+h2, p {
+  margin: 0 20px;
 }
 
-.runner p {
-  margin-top: 10px;
-  margin-bottom: 0;
+/* BREAKPOINTS */
+
+@media screen and (min-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+  #menu-button {
+    display: none;
+  }
+  nav, .nav-show {
+    height: auto;
+  }
+  ul {
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+  }
+  .logo {
+    height: 100px;
+    align-self: left;
+  }
+  #splash-image {
+    width: 40%;
+    max-width: 500px;
+    float: left;
+    margin-right: 20px;
+  }
+  article {
+    display: block;
+  }
 }
