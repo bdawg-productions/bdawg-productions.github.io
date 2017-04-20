@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> B-Dawg Productions </title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="description" content="The Official B-Dawg Productions Web Site">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+  function toggleMenu() {
+    document.getElementById("menu-nav").classList.toggle("nav-show");
+    document.getElementById("menu-button").classList.toggle("rotate-cw");
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button id="menu-button" onclick="toggleMenu()"> > </button>
+      <h1> B-Dawg Productions </h1>
+    </header>
+    <nav id="menu-nav">
+      <ul>
+        <li> Home </li>
+        <li> About </li>
+        <li> Buy </li>
+        <li> Contact </li>
+      </ul>
+    </nav>
+    <article class="runner">
+      <div class="overlay-card">
+        <h2> Lorem ipsum </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
