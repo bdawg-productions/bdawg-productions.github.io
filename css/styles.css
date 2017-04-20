@@ -1,0 +1,86 @@
+/* BASE STYLES */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.container, header {
+    display: flex;
+}
+
+.container {
+  flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+  padding: 7px;
+}
+
+nav {
+  transition: 0.5s;
+  height: 0;
+  overflow: hidden;
+  font-size: 1.2em;
+}
+
+.nav-show {
+  height: 110px;
+}
+
+#menu-button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-size: 1.3em;
+  transition: 0.2s;
+}
+
+/* #menu-button:hover {
+  transform: rotate(45deg);
+} */
+
+.rotate-cw {
+  transform: rotate(90deg);
+}
+
+ul {
+  margin: 0;
+  padding-left: 15px;
+  list-style-type: none;
+}
+
+li {
+  padding: 0 5px;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+/* RUNNER */
+
+.runner {
+  background: url("../media/cityscape.jpg") left no-repeat;
+}
+
+.overlay-card {
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  max-width: 400px;
+}
+
+.runner h2 {
+  margin: 0;
+}
+
+.runner p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
