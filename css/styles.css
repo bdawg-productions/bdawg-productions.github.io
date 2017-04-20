@@ -50,6 +50,7 @@ nav {
   border: none;
   font-size: 2em;
   transition: 0.2s;
+  padding: 0 10px;
 }
 
 /* #menu-button:hover {
@@ -88,6 +89,7 @@ h1 {
 #splash-image {
   align-self: left;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 article {
