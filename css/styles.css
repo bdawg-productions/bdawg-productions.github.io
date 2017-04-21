@@ -9,10 +9,6 @@ body {
   color: white;
 }
 
-*:focus {
-  outline: none;
-}
-
 body, h1 {
   margin: 0;
   padding: 0;
@@ -61,6 +57,8 @@ nav {
   font-size: 2em;
   transition: 0.2s;
   padding: 0 10px;
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* #menu-button:hover {
