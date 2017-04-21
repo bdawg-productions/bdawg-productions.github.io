@@ -9,6 +9,10 @@ body {
   color: white;
 }
 
+*:focus {
+  outline: none;
+}
+
 body, h1 {
   margin: 0;
   padding: 0;
