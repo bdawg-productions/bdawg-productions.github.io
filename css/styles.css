@@ -72,7 +72,7 @@ nav {
 .logo {
   height: 50px;
   align-self: center;
-  transition: 0.3s;
+  transition: filter 0.3s, transform 0.3s;
 }
 
 .logo:hover {
