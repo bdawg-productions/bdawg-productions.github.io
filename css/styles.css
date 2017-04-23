@@ -72,6 +72,12 @@ nav {
 .logo {
   height: 50px;
   align-self: center;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  filter: brightness(1.5);
+  transform: scale(1.1);
 }
 
 ul {
