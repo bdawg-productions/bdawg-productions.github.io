@@ -131,17 +131,19 @@ article p {
 
 .bio {
   display: block;
-  background: url("../media/b-dawg.png");
+  background: url("../media/bio-bg.png");
   background-size: cover;
-  background-position: top left;
+  background-position: left;
 }
 
 .bio img {
   display: none;
+  height: 100%;
+  margin-left: 10px;
 }
 
 .bio p, .bio h2 {
-  color: yellow;
+  color: black;
 }
 
 /* BREAKPOINTS */
