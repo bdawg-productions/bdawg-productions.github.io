@@ -115,16 +115,33 @@ h1 {
   justify-content: center;
 }
 
-.splash h2 {
+article h2 {
   margin: 10px 10px 4px;
 }
 
-.splash p {
+article p {
   margin: 4px 10px 10px;
 }
 
 .splash div {
   flex-direction: column;
+}
+
+/* BIO */
+
+.bio {
+  display: block;
+  background: url("../media/b-dawg.png");
+  background-size: cover;
+  background-position: top left;
+}
+
+.bio img {
+  display: none;
+}
+
+.bio p, .bio h2 {
+  color: yellow;
 }
 
 /* BREAKPOINTS */
@@ -155,5 +172,9 @@ h1 {
   }
   .splash div {
     width: 33%;
+  }
+  .bio img {
+    float: right;
+    display: block;
   }
 }
