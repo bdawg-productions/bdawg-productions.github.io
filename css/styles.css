@@ -72,11 +72,10 @@ nav {
 .logo {
   height: 50px;
   align-self: center;
-  transition: filter 0.3s, transform 0.3s;
+  transition: transform 0.3s;
 }
 
 .logo:hover {
-  filter: brightness(1.5);
   transform: scale(1.1);
 }
 
@@ -106,7 +105,6 @@ h1 {
 /* SPLASH */
 
 .splash-image {
-  align-self: left;
   width: 100%;
 }
 
@@ -166,8 +164,6 @@ article p {
   .logo {
     height: 100px;
     align-self: left;
-  }
-  .splash-image {
   }
   .splash {
     flex-direction: row;
