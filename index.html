@@ -8,18 +8,14 @@
   <meta name="description" content="The Official B-Dawg Productions Web Site">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#282828">
-  <script>
-  function toggleMenu() {
-    document.getElementById("menu-nav").classList.toggle("nav-show");
-    document.getElementById("menu-button").classList.toggle("rotate-cw");
-  }
-  </script>
+  <script src="js/script.js"></script>
+  <script> audio = new Audio("media/b-ball-audio.ogg"); </script>
 </head>
 <body>
   <div class="container">
     <header>
       <button id="menu-button" onclick="toggleMenu()"> > </button>
-      <img src="media/bd-logo.png" class="logo">
+      <img src="media/bd-logo.png" class="logo" onclick="playAudio()">
       <nav id="menu-nav">
         <ul>
           <li> <a href="#"> Home </a> </li>
