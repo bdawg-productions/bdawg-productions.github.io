@@ -24,7 +24,7 @@ body, h1 {
   margin: auto;
 }
 
-.container, ul {
+.container, ul, article {
   flex-direction: column;
 }
 
@@ -142,6 +142,18 @@ article p {
 
 .bio p, .bio h2 {
   color: black;
+}
+
+/* VIDEOS */
+
+.vid {
+  flex-direction: column;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.vid iframe {
+  width: 100%;
 }
 
 /* BREAKPOINTS */
