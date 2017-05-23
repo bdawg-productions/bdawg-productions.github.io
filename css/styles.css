@@ -61,6 +61,10 @@ nav {
   -webkit-tap-highlight-color: transparent;
 }
 
+#menu-button:focus {
+  outline: 0;
+}
+
 /* #menu-button:hover {
   transform: rotate(45deg);
 } */
