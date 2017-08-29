@@ -34,6 +34,7 @@ header {
   padding: 7px;
   justify-content: center;
   flex-direction: column;
+	background-color: white;
 }
 
 nav {
@@ -49,6 +50,7 @@ nav {
 
 #menu-button {
   position: absolute;
+	color: black;
   top: 8px;
   left: 8px;
   z-index: 99;
@@ -96,6 +98,7 @@ li {
 li a {
   text-decoration: none;
   font-family: "Rock Salt", cursive;
+	color: black;
 }
 
 /* SPLASH */
@@ -157,6 +160,7 @@ article p {
 @media screen and (min-width: 600px) {
   header {
     flex-direction: row;
+		margin: 15px 0;
   }
   #menu-button {
     display: none;
